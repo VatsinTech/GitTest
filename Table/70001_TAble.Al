@@ -1,6 +1,7 @@
-table 50001 TEST
+table 70001 TEST
 {
     DataClassification = ToBeClassified;
+    LookupPageId = 70001;
     fields
     {
         field(1; "No."; Code[20]) { DataClassification = ToBeClassified; }
