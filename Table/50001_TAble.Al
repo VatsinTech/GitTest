@@ -1,23 +1,21 @@
-table 50001 MyTable
+table 50001 TEST
 {
     DataClassification = ToBeClassified;
-
     fields
     {
-        field(1; No; Integer)
-        {
-            DataClassification = ToBeClassified;
-
-        }
+        field(1; "No."; Code[20]) { DataClassification = ToBeClassified; }
+        field(2; Description; Text[100]) { DataClassification = ToBeClassified; }
+        field(3; "Inventory"; Decimal) { DataClassification = ToBeClassified; }
+        field(4; "Production BOM No."; Code[20]) { DataClassification = ToBeClassified; }
     }
 
-    /* keys
+    keys
     {
-        key(No.; No.)
+        key(PK; "No.")
         {
             Clustered = true;
         }
-    } */
+    }
 
     var
         myInt: Integer;
